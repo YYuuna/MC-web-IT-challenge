@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Website</title>
+</head>
+<body>
+    <!-- an input field to submit the city name -->
+    <input type="text" id="city" placeholder="Enter city name">
+    <button id="submit">Submit</button>
+    <!-- a div to display the weather information -->
+    <div id="weather" style="display: none;">
+        <h2>Weather Information today</h2>
+        <img id="icon">
+        <p id="city_name"></p>
+        <p id="region"></p>
+        <p id="country"></p>
+        <p id="description"></p>        
+        <p id="avgtemp"></p>
+        <p id="maxtemp"></p>
+        <p id="mintemp"></p>
+        <p id="daily_chance_of_rain"></p>
+        <p id="daily_chance_of_snow"></p>
+        
+    </div>
+    <!-- a div to show in case of error -->
+    <div id="error" style="display: none;">
+        <h2>Error</h2>
+        <p id="error_message"></p>
+    
+
+
+
+<script src="{% static 'js/jquery-3.7.1.min.js' %}"></script>
+<script src="{% static 'js/weather.js' %}"></script>    
+</body>
+</html>

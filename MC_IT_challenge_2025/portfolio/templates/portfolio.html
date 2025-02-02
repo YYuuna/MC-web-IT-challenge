@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yuna's Portfolio</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #35424a;
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 10px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      margin-bottom: 15px;
+      border-bottom: 2px solid #35424a;
+      padding-bottom: 5px;
+    }
+    .project, .skill, .hobby {
+      margin-bottom: 15px;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #35424a;
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    /* Responsive navigation */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Yuna's Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm BADACHE Younes (Yuna), a first-year master's student in Computer Science specializing in Intelligent Information Systems at USTHB in Algeria. I'm passionate about exploring innovative technologies and building smart systems that make an impact.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Bachelor final year project</h3>
+        <p>I have created a web application as a point of sale system .</p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill">
+        <h3>Programming Languages</h3>
+        <p>Python, Java, C, JavaScript</p>
+      </div>
+      <div class="skill">
+        <h3>Web Development</h3>
+        <p>HTML, JavaScript, Django (still a begginer in front end as you can see :P)</p>
+      </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies">
+      <h2>Hobbies & Interests</h2>
+      <div class="hobby">
+        <h3>Anime & Gaming</h3>
+        <p>I enjoy watching anime and playing video games in my free time. They provide a great balance to my academic pursuits.</p>
+      </div>
+      <div class="hobby">
+        <h3>Music</h3>
+        <p>Music is my escape, fueling my creativity and relaxation.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If you’d like to get in touch, feel free to email me at <a href="mailto:badache1112@gmail.com">badache1112@gmail.com</a>.</p>
+    </section>
+  </main>
+</body>
+</html>
